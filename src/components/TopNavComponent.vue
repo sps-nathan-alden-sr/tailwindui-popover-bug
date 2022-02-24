@@ -4,9 +4,11 @@
       <Popover>
         <PopoverButton>Popover</PopoverButton>
         <PopoverPanel style="margin-left: 10px;">
-          <PopoverButton tabindex="-1">
+          <PopoverButton as="template">
             <router-link :to="{ name: 'Home' }" @keydown="k">Home</router-link>
-            <br />
+          </PopoverButton>
+          <br />
+          <PopoverButton as="template">
             <router-link :to="{ name: 'About' }" @keydown="k">About</router-link>
           </PopoverButton>
         </PopoverPanel>
